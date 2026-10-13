@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Guia do grupo — Plataforma de Inovação</title>
+<style>
+@page { size: A4; margin: 14mm 13mm; }
+* { box-sizing: border-box; }
+body { font-family: "Noto Sans", "DejaVu Sans", sans-serif; font-size: 9.6pt; line-height: 1.45; color: #22262F; margin: 0; }
+h1 { font-size: 21pt; color: #1E2761; margin: 0 0 2mm; letter-spacing: -.3px; }
+h2 { font-size: 12.5pt; color: #1E2761; margin: 7mm 0 2.5mm; padding-bottom: 1.5mm; border-bottom: 1.5px solid #E2E5F2; }
+h3 { font-size: 10.2pt; color: #4C63DD; margin: 4mm 0 1.5mm; }
+p { margin: 0 0 2mm; }
+ul { margin: 0 0 2mm; padding-left: 4.5mm; }
+li { margin-bottom: 1.2mm; }
+.capa { background: #1E2761; color: #fff; padding: 7mm 8mm; border-radius: 3mm; margin-bottom: 5mm; }
+.capa h1 { color: #fff; }
+.capa .sub { color: #CADCFC; font-size: 10.5pt; margin-top: 1mm; }
+.capa .meta { color: #AFC0E8; font-size: 8.4pt; margin-top: 3.5mm; }
+.pitch { background: #EEF1FC; border-radius: 2.5mm; padding: 4mm 5mm; margin-bottom: 3mm; }
+.pitch .rotulo { font-size: 7.6pt; font-weight: 700; color: #4C63DD; text-transform: uppercase; letter-spacing: .5px; }
+.pitch p { font-size: 10.6pt; margin: 1.5mm 0 0; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3mm; }
+.card { background: #F6F7FB; border-radius: 2.5mm; padding: 3.5mm 4mm; }
+.card h3 { margin-top: 0; }
+.card p, .card ul { font-size: 9pt; }
+table { width: 100%; border-collapse: collapse; margin-bottom: 2mm; font-size: 8.8pt; }
+th { background: #1E2761; color: #fff; text-align: left; padding: 1.8mm 2.5mm; font-weight: 600; }
+td { padding: 1.8mm 2.5mm; border-bottom: .5px solid #E2E5F2; vertical-align: top; }
+tr:nth-child(even) td { background: #FAFBFD; }
+.num { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2.5mm; margin-bottom: 2mm; }
+.num div { background: #EEF1FC; border-radius: 2mm; padding: 3mm 1mm; text-align: center; }
+.num b { display: block; font-size: 14pt; color: #4C63DD; line-height: 1.1; }
+.num span { font-size: 7.4pt; color: #5A6072; }
+.q { font-weight: 700; color: #1E2761; margin-top: 3mm; }
+.q + p { margin-left: 0; }
+.tag { display: inline-block; background: #4C63DD; color: #fff; font-size: 7.4pt; padding: .6mm 2mm; border-radius: 6mm; margin-right: 1mm; }
+.alerta { background: #FFF6E8; border-radius: 2.5mm; padding: 3.5mm 4mm; font-size: 9pt; }
+.alerta b { color: #9A6212; }
+.ok { background: #EAF6EE; border-radius: 2.5mm; padding: 3.5mm 4mm; font-size: 9pt; }
+code { font-family: "DejaVu Sans Mono", monospace; font-size: 8.4pt; background: #EDEFF6; padding: .3mm 1.2mm; border-radius: 1mm; }
+.fluxo { display: flex; gap: 1.5mm; align-items: stretch; margin: 2mm 0 3mm; }
+.fluxo div { flex: 1; background: #fff; border: 1.2px solid #4C63DD; border-radius: 2mm; padding: 2.5mm 1.5mm; text-align: center; font-size: 8.2pt; }
+.fluxo div b { display: block; color: #4C63DD; font-size: 8.8pt; }
+.rodape { margin-top: 5mm; padding-top: 2.5mm; border-top: .5px solid #E2E5F2; font-size: 8pt; color: #7A8090; }
+.quebra { page-break-before: always; }
+.card, .alerta, .ok, .fluxo, .num, .pitch { page-break-inside: avoid; }
+.grid2, .grid3 { page-break-inside: avoid; }
+table { page-break-inside: auto; }
+tr { page-break-inside: avoid; }
+h2, h3 { page-break-after: avoid; }
+.q { page-break-after: avoid; }
+.nobreak { page-break-inside: avoid; }
+</style></head><body>
+
+<div class="capa">
+  <h1>Plataforma de Inovação · Grupo Águia Branca</h1>
+  <div class="sub">Guia de bolso do grupo — para responder com segurança no evento</div>
+  <div class="meta">Challenge FIAP · 2º ano · Fase 6 · Grupo 42 · Mateus Bhering (RM564760) · Ariel Alves (RM564563) · Wesley França (RM563666) · Ronaldo Silva (RM561414) · Rodrigo Kumamoto (RM566049)</div>
+</div>
+
+<div class="pitch">
+  <div class="rotulo">Se alguém perguntar "o que vocês fizeram?" — responda isto</div>
+  <p>Um aplicativo onde o operador da fábrica registra o problema que vê no dia a dia, o gestor avalia e transforma a boa ideia em projeto, e a liderança acompanha quanto isso devolveu em dinheiro e produtividade. No semestre passado era só uma tela com dados fictícios; agora tem um servidor próprio, login por perfil e banco de dados — é um sistema de verdade.</p>
+</div>
+
+<h2>Os números que impressionam</h2>
+<div class="num">
+  <div><b>27</b><span>endpoints da API</span></div>
+  <div><b>69</b><span>testes automatizados</span></div>
+  <div><b>3</b><span>perfis de acesso</span></div>
+  <div><b>10</b><span>telas no app</span></div>
+  <div><b>2</b><span>containers Docker</span></div>
+  <div><b>1</b><span>comando para rodar</span></div>
+</div>
+
+<h2>O que cada perfil faz no app</h2>
+<table>
+<tr><th style="width:17%">Perfil</th><th style="width:38%">O que ele vê e faz</th><th>Por que isso importa</th></tr>
+<tr><td><b>Operador</b><br><span style="color:#7A8090;font-size:8pt">quem está na linha</span></td><td>Vê a diretriz da empresa, cadastra a ideia ligada a ela, acompanha o status e pode corrigir enquanto ninguém avaliou</td><td>Quem conhece o problema é quem está lá. O app tira a ideia do papel e dá um caminho para ela</td></tr>
+<tr><td><b>Gestor</b><br><span style="color:#7A8090;font-size:8pt">quem decide</span></td><td>Fila de ideias com filtros, define prioridade, avança etapas ou rejeita com motivo, e cadastra projetos com prazo, investimento e resultados</td><td>Transforma sugestão em iniciativa com dono, prazo e verba</td></tr>
+<tr><td><b>Liderança</b><br><span style="color:#7A8090;font-size:8pt">quem olha o todo</span></td><td>Painel com ROI, lucro, custo evitado e produtividade, três gráficos, além do cadastro das diretrizes e do histórico de mudanças</td><td>Mostra se a inovação deu retorno, com número e não com achismo</td></tr>
+</table>
+
+<h3>O caminho de uma ideia (decore este fluxo)</h3>
+<div class="fluxo">
+  <div><b>Enviada</b>operador registra</div>
+  <div><b>Em análise</b>gestor avalia</div>
+  <div><b>Decisão</b>seleção</div>
+  <div><b>Projeto</b>vira iniciativa</div>
+  <div><b>Resultado</b>retorno medido</div>
+</div>
+
+<div class="nobreak">
+<h2>Como foi construído</h2>
+<div class="grid3">
+  <div class="card"><h3>App Android</h3><p>Kotlin com Jetpack Compose e Material 3, no padrão MVVM. Conversa com o servidor pela biblioteca Retrofit. Os gráficos foram desenhados à mão em Canvas, sem biblioteca externa.</p></div>
+  <div class="card"><h3>Servidor (API)</h3><p>Java 21 com Spring Boot. Organizado em camadas: controller recebe, service decide, repository acessa o banco. Segurança com Spring Security e token JWT.</p></div>
+  <div class="card"><h3>Banco e ambiente</h3><p>MongoDB, banco de documentos. Tudo sobe com Docker: dois containers, um comando, sem instalar Java nem banco na máquina.</p></div>
+</div>
+</div>
+
+<h2>Perguntas que vão fazer — e a resposta pronta</h2>
+
+<div class="q">Por que vocês escolheram MongoDB e não um banco tradicional?</div>
+<p>O desafio exigia banco NoSQL. Encaixou bem: uma ideia e um projeto têm listas dentro deles — indicadores, histórico de alterações, atualizações de progresso — e no Mongo isso fica tudo em um documento só, sem precisar de várias tabelas amarradas.</p>
+
+<div class="q">Como funciona o login e por que ele é seguro?</div>
+<p>A senha nunca é guardada como texto: o servidor grava um resumo embaralhado dela (BCrypt), de onde não dá para voltar à senha original. Ao entrar, o servidor devolve um token que vale 8 horas e carrega dentro dele qual é o perfil da pessoa. Toda chamada seguinte leva esse token, e o servidor confere se aquele perfil pode fazer aquela operação.</p>
+
+<div class="q">E se alguém tentar acessar algo que não pode?</div>
+<p>Recebe erro 403 e uma mensagem explicando. Isso vale até se a pessoa chamar o servidor por fora do app: a regra está no servidor, não na tela. Dá para demonstrar ao vivo — com o token de operador, a rota de projetos responde 403.</p>
+
+<div class="q">Como vocês garantem que funciona? Testaram?</div>
+<p>São 69 testes automatizados que sobem um banco de verdade em container e exercitam as regras: quem pode o quê, se o operador só vê as próprias ideias, se a ideia respeita o fluxo de etapas e se as contas do painel batem. Toda vez que alguém envia código, o GitHub roda esses testes e compila o aplicativo sozinho.</p>
+
+<div class="q">Os números do painel são reais ou chutados?</div>
+<p>São calculados na hora, a partir dos projetos cadastrados. O ROI é retorno menos investimento, dividido pelo investimento. Nada disso fica salvo no banco, justamente para nunca ficar desatualizado em relação aos valores dos projetos.</p>
+
+<div class="q">Qual foi a parte mais difícil?</div>
+<p>Duas coisas. Primeiro, trocar os dados fictícios do protótipo pelas chamadas reais sem quebrar as telas: resolvemos mantendo os mesmos nomes de campos e formatando os valores na entrada do app. Segundo, um erro sutil: ao sair do aplicativo, uma tela ainda recarregava por um instante e, já sem o token, mostrava "sessão expirada" sem motivo. Achamos a causa e corrigimos em duas camadas.</p>
+
+<div class="q">Tem inteligência artificial?</div>
+<p>Ainda não. Era um diferencial opcional do desafio e priorizamos entregar o essencial funcionando e testado. A base já está pronta para receber: o próximo passo seria pontuar e priorizar as ideias automaticamente, e gerar análises dos resultados para a liderança.</p>
+
+<div class="q">Dá para usar em produção amanhã?</div>
+<p>O sistema funciona de ponta a ponta, mas roda na máquina de quem o executa. Para uso real faltaria publicar o servidor num provedor, colocar HTTPS e trocar as senhas de demonstração. A aplicação já foi feita pensando nisso: tudo que muda de ambiente está em variáveis de configuração.</p>
+
+<div class="q">Quanto tempo levou e como se dividiram?</div>
+<p>Uma sprint de duas semanas, partindo do protótipo do semestre anterior. O trabalho foi dividido entre servidor, aplicativo e documentação, com revisão por pull request antes de entrar no projeto — inclusive o ajuste final, que corrigiu o erro do logout e a versão do banco.</p>
+
+<div class="q">E se a internet cair ou o servidor estiver fora?</div>
+<p>O aplicativo mostra um aviso explicando e um botão para tentar de novo, em vez de travar ou fechar. Cada erro do servidor vira uma mensagem em português na tela.</p>
+
+<h2>Roteiro da demonstração em 3 minutos</h2>
+<table>
+<tr><th style="width:14%">Tempo</th><th style="width:30%">O que mostrar</th><th>O que dizer</th></tr>
+<tr><td>0:00</td><td>Login como operador</td><td>"Cada pessoa entra com seu perfil e só enxerga o que lhe cabe"</td></tr>
+<tr><td>0:30</td><td>Cadastrar uma ideia</td><td>"Toda ideia nasce ligada a uma diretriz da empresa — é o que alinha o chão de fábrica à estratégia"</td></tr>
+<tr><td>1:00</td><td>Entrar como gestor, abrir a fila</td><td>"O gestor prioriza, avança a etapa ou rejeita explicando o motivo para quem sugeriu"</td></tr>
+<tr><td>1:45</td><td>Transformar em projeto e lançar resultado</td><td>"A ideia aprovada vira projeto com prazo e investimento, e o resultado é registrado aqui"</td></tr>
+<tr><td>2:15</td><td>Entrar como liderança</td><td>"E aqui a liderança vê o retorno: ROI, lucro, custo evitado — tudo calculado a partir desses projetos"</td></tr>
+<tr><td>2:45</td><td>Mostrar o 403 no Swagger</td><td>"A segurança está no servidor: com o token do operador, essa rota é recusada"</td></tr>
+</table>
+
+<div class="alerta nobreak"><b>Antes de apresentar, confira:</b> o servidor está rodando (<code>cd backend &amp;&amp; docker compose up</code>), o emulador abriu e o login funciona. Se algo falhar, a saída honesta é mostrar a documentação e o Swagger — eles rodam sem o aplicativo.</div>
+
+<h2>Dicionário rápido</h2>
+<div class="grid2">
+  <div class="card"><h3>API REST</h3><p>O servidor que guarda os dados e aplica as regras. O aplicativo não decide nada sozinho: ele pergunta para a API.</p></div>
+  <div class="card"><h3>Token JWT</h3><p>Um crachá digital assinado, entregue no login. Carrega quem é a pessoa e qual seu perfil, e vale 8 horas.</p></div>
+  <div class="card"><h3>Docker</h3><p>Empacota o servidor e o banco com tudo que precisam. Quem for avaliar roda um comando e funciona igual em qualquer máquina.</p></div>
+  <div class="card"><h3>MongoDB</h3><p>Banco que guarda documentos em vez de linhas e colunas — parecido com uma ficha completa de cada ideia ou projeto.</p></div>
+  <div class="card"><h3>Jetpack Compose</h3><p>Forma moderna de montar telas no Android: a tela é descrita em código e se redesenha sozinha quando o dado muda.</p></div>
+  <div class="card"><h3>Teste automatizado</h3><p>Um programa que usa o sistema no nosso lugar e avisa se alguma regra parou de funcionar depois de uma mudança.</p></div>
+</div>
+
+<h2>O que dizer com honestidade</h2>
+<div class="grid2">
+  <div class="ok"><b style="color:#1B5E36">Pode afirmar sem medo</b>
+  <ul>
+    <li>O aplicativo não tem mais nenhum dado fictício: tudo vem do servidor</li>
+    <li>Os três perfis funcionam, com permissões conferidas no servidor</li>
+    <li>69 testes automatizados, rodando a cada envio de código</li>
+    <li>Sobe em qualquer máquina com um comando</li>
+    <li>Os indicadores são calculados, não digitados</li>
+  </ul></div>
+  <div class="alerta"><b>Não prometa</b>
+  <ul>
+    <li>Inteligência artificial — ficou como próximo passo</li>
+    <li>Sistema publicado na internet — hoje roda localmente</li>
+    <li>Notificações no celular e anexo de fotos — não entraram nesta etapa</li>
+    <li>Aplicativo para iPhone — a entrega é Android</li>
+  </ul></div>
+</div>
+
+<h2>Se perguntarem onde ver o código</h2>
+<p>O projeto está público no GitHub, com README explicando como rodar, diagramas de arquitetura, a lista dos 27 endpoints e uma coleção pronta para testar a API:</p>
+<p><code>github.com/wesley-franca/fiap_2-ano_fase-6-projeto-agua-branca</code></p>
+
+<div class="rodape">Guia interno do Grupo 42 · leia antes do evento · dúvidas técnicas podem ser respondidas com "está no README do repositório, posso te mostrar"</div>
+
+</body></html>
